@@ -4,14 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Face tracking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    Hello world
+    <div class="demo-frame">
+        <div class="demo-container">
+            <video id="video" width="640" height="480" preload autoplay loop muted></video>
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script type="text/javascript" src="/tracking-min.js"></script>
+    <script type="text/javascript" src="/face-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
